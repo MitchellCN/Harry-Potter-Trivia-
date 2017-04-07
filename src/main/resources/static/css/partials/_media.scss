@@ -1,0 +1,38 @@
+@media (max-width: 767px){
+  h2, h3, button {
+    margin-bottom: 10px;
+  }
+  h2 {
+  	font-size: 1.5rem;
+  	line-height: 1.4;
+  }
+  h3 {
+  	font-size: 1.1rem;
+  	line-height: 1.3;
+  }
+  article {
+    .container {
+  		left: 25%;
+  	  width: 50%;
+    }
+  }
+}
+
+@media (max-width: 625px){
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+
+  h2, h3, button {
+    margin-bottom: 5px;
+  }
+  article {
+    .container {
+  		left: 12.5%;
+  	  width: 75%;
+    }
+  }
+}
