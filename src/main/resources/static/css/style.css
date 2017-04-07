@@ -5,6 +5,39 @@
   src: local("☺"), url("../fonts/ParryHotter.woff") format("woff"), url("../fonts/ParryHotter.ttf") format("truetype"), url("../fonts/ParryHotter.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+.nav-desktop {
+  background: #531E1C; }
+  .nav-desktop ul {
+    text-align: center;
+    padding: 10px 0; }
+    .nav-desktop ul li {
+      display: inline-block; }
+      .nav-desktop ul li a {
+        margin: 10px;
+        line-height: 1.6;
+        border-bottom: 2px solid transparent; }
+      .nav-desktop ul li a:hover {
+        padding-bottom: 2px;
+        border-bottom-color: #B4CAD0; }
+
+.nav-mobile {
+  background: #531E1C;
+  text-align: center;
+  display: none; }
+  .nav-mobile ul {
+    text-align: center;
+    display: none;
+    padding-bottom: 15px; }
+    .nav-mobile ul li a {
+      display: block;
+      padding: 7px 0; }
+    .nav-mobile ul li a:hover {
+      text-decoration: underline; }
+
+.toggle {
+  font-family: 'Conv_ParryHotter',Sans-Serif;
+  padding: 10px 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -60,39 +93,6 @@ button {
 header {
   background-color: rgba(83, 30, 28, 0.5);
   padding-top: 20px; }
-
-.nav-desktop {
-  background: #531E1C; }
-  .nav-desktop ul {
-    text-align: center;
-    padding: 10px 0; }
-    .nav-desktop ul li {
-      display: inline-block; }
-      .nav-desktop ul li a {
-        margin: 10px;
-        line-height: 1.6;
-        border-bottom: 2px solid transparent; }
-      .nav-desktop ul li a:hover {
-        padding-bottom: 2px;
-        border-bottom-color: #B4CAD0; }
-
-.nav-mobile {
-  background: #531E1C;
-  text-align: center;
-  display: none; }
-  .nav-mobile ul {
-    text-align: center;
-    display: none;
-    padding-bottom: 15px; }
-    .nav-mobile ul li a {
-      display: block;
-      padding: 7px 0; }
-    .nav-mobile ul li a:hover {
-      text-decoration: underline; }
-
-.toggle {
-  font-family: 'Conv_ParryHotter',Sans-Serif;
-  padding: 10px 0; }
 
 article {
   position: relative;

@@ -6,9 +6,8 @@
 	font-style: normal;
 }
 
-$primary:#04231E; //darkgreen (rgb 4 35 30)
-$secondary:#531E1C; //darkred (rgb 83 30 28)
-$accent:#B4CAD0; //light blue, primary color for text
+@import "partials/variables";
+@import "partials/nav";
 
 * {
   margin:0;
@@ -74,50 +73,6 @@ header {
   padding-top: 20px;
 }
 
-.nav-desktop {
-  // height: 50px;
-  background:$secondary;
-  ul {
-    text-align: center;
-    padding: 10px 0;
-    li {
-      display: inline-block;
-      a {
-        margin: 10px;
-        line-height: 1.6;
-        border-bottom: 2px solid transparent;
-      }
-      a:hover {
-        padding-bottom: 2px;
-        border-bottom-color: $accent;
-      }
-    }
-  }
-}
-
-.nav-mobile {
-	background:$secondary;
-	text-align:center;
-	display: none;
-	ul {
-		text-align: center;
-		display: none;
-		padding-bottom: 15px;
-		li{
-			a{
-				display: block;
-				padding: 7px 0;
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-}
-.toggle {
-	font-family:'Conv_ParryHotter',Sans-Serif;
-	padding: 10px 0;
-}
 
 article{
 	position: relative;
@@ -154,4 +109,5 @@ article{
 	}
 }
 
+@import "partials/questions";
 @import "partials/media";
