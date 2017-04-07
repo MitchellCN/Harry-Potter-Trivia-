@@ -23,7 +23,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-	min-height: 768px;
+	height: 100vh;
 	color:$accent;
 	font-size: 16px;
 	line-height: 1.6;
@@ -67,6 +67,12 @@ button {
 	border:none;
 	border-radius: 8px;
 }
+button:hover {
+	background: $accent;
+	a, p {
+	color: $secondary;
+	}
+}
 
 header {
   background-color: rgba(83, 30, 28, 0.5);
@@ -74,21 +80,22 @@ header {
 }
 
 
-article{
+article {
+	height:50vh;
 	position: relative;
-	height: 100vh;
+	top:18%;
 	z-index: -10;
+	width: 40%;
+	margin: 2% auto;
 
 	.container {
-		position: absolute;
-		left: 32.5%;
-		bottom: 10px;
+		// bottom: 10px;
 	  background: $primary;
-	  // height: 200px;
-	  width: 35%;
-	  margin: 0 auto 25px;
 		padding: 10px;
 		border-radius: 8px;
+		margin-bottom: 10%;
+		// position: absolute;
+		// bottom: 30px;
 
 		.quiz-container {
 			border: 10px solid $secondary;
@@ -103,7 +110,7 @@ article{
 			button {
 				width: 75%;
 				margin-left: 12.5%;
-				font-size: 1.15rem;
+				font-size: 1.1rem;
 			}
 		}
 	}
