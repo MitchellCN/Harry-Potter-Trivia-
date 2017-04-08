@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -19,7 +22,7 @@ public class QuestionRepository {
     public List<Question> listQuestion() {
 
         return template.query(
-                "SELECT * FROM question ORDER BY question_id",
+                "SELECT question_id, question,answer,answer1,answer2,answer3 FROM trivia_game order BY Random() limit 1",
                 (rs, i) -> new Question(
                         rs.getInt("question_id"),
                         rs.getString("question"),
@@ -30,6 +33,7 @@ public class QuestionRepository {
                 ));
 
     }
+
 
 
 }

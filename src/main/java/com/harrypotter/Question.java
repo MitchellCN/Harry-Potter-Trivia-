@@ -7,6 +7,7 @@ public class Question {
 
     private Integer question_id;
     private String question;
+    private Answer answers;
     private String answer;
     private String answer1;
     private String answer2;
@@ -16,14 +17,19 @@ public class Question {
     public Question() {
     }
 
-    public Question(Integer personId, String title, String firstName, String middleName, String lastName, String suffix) {
+    public Question(Integer question_id, String question, String answer, String answer1, String answer2, String answer3) {
         this.question_id = question_id;
         this.question = question;
         this.answer = answer;
         this.answer1 = answer1;
         this.answer2 = answer2;
         this.answer3 = answer3;
+        loadAnswers();
 
+    }
+
+    private void loadAnswers() {
+        this.answers = new Answer(answer,answer1,answer2,answer3);
     }
 
     public Integer getQuestion_id(int question_id) {
@@ -42,12 +48,12 @@ public class Question {
         this.question = question;
     }
 
-    public String getAnswer() {
-        return answer;
+    public Answer getAnswers() {
+        return answers;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setAnswer(Answer answer) {
+        this.answers = answers;
     }
 
     public String getAnswer1() {
