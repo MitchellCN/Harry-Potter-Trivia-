@@ -91,6 +91,8 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer; }
+  button a {
+    padding: 10px 25px; }
 
 button:hover {
   background: #B4CAD0; }
@@ -114,8 +116,10 @@ article {
     margin-bottom: 10%; }
     article .container .timer {
       font-size: 2rem;
-      display: inline-block;
+      width: auto;
       text-align: right;
+      padding: 0 25px;
+      margin-bottom: 5px;
       border: 2px solid #B4CAD0; }
     article .container .quiz-container {
       border: 10px solid #531E1C;

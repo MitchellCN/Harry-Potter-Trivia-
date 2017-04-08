@@ -72,6 +72,9 @@ button {
 	border:none;
 	border-radius: 8px;
 	cursor: pointer;
+	a {
+		padding: 10px 25px;
+	}
 }
 button:hover {
 	background: $accent;
@@ -105,9 +108,11 @@ article {
 
 		.timer {
 			font-size: 2rem;
-			display: inline-block;
+			// display: inline-block;
+			width: auto;
 			text-align: right;
-			// padding-right: 15px;
+			padding: 0 25px;
+			margin-bottom: 5px;
 			border:2px solid $accent;
 		}
 
