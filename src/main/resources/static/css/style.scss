@@ -35,23 +35,28 @@ h1 {
 	margin:0;
 	font-size: 3.25rem;
 }
+
 h2 {
 	font-family:'Conv_ParryHotter',Sans-Serif;
 	text-align: center;
 	font-size: 2rem;
 	line-height: 1.4;
 }
+
 h3 {
 	text-align: center;
 	font-size: 1.5rem;
 	line-height: 1.3;
 }
+
 h4 {
 	font-size: 1.15rem;
 }
+
 h5 {
 	font-size: 1rem;
 }
+
 h6 {
 	font-size: .8rem;
 }
@@ -66,6 +71,7 @@ button {
 	padding: 15px;
 	border:none;
 	border-radius: 8px;
+	cursor: pointer;
 }
 button:hover {
 	background: $accent;
@@ -83,8 +89,8 @@ header {
 article {
 	// height:50vh;
 	position: relative;
-	top:18%;
-	width: 40%;
+	top:10%;
+	width: 45%;
 	margin: 2% auto;
 
 	.container {
@@ -96,6 +102,14 @@ article {
 		margin-bottom: 10%;
 		// position: absolute;
 		// bottom: 30px;
+
+		.timer {
+			font-size: 2rem;
+			display: inline-block;
+			text-align: right;
+			// padding-right: 15px;
+			border:2px solid $accent;
+		}
 
 		.quiz-container {
 			border: 10px solid $secondary;

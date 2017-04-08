@@ -3,7 +3,7 @@
   background:$secondary;
   ul {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     li {
       display: inline-block;
       a {
@@ -41,4 +41,5 @@
 .toggle {
 	font-family:'Conv_ParryHotter',Sans-Serif;
 	padding: 10px 0;
+  cursor: pointer;
 }

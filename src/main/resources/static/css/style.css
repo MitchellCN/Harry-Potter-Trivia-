@@ -9,7 +9,7 @@
   background: #531E1C; }
   .nav-desktop ul {
     text-align: center;
-    padding: 10px 0; }
+    padding: 10px; }
     .nav-desktop ul li {
       display: inline-block; }
       .nav-desktop ul li a {
@@ -36,7 +36,8 @@
 
 .toggle {
   font-family: 'Conv_ParryHotter',Sans-Serif;
-  padding: 10px 0; }
+  padding: 10px 0;
+  cursor: pointer; }
 
 * {
   margin: 0;
@@ -88,7 +89,8 @@ button {
   background: #531E1C;
   padding: 15px;
   border: none;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
 button:hover {
   background: #B4CAD0; }
@@ -101,8 +103,8 @@ header {
 
 article {
   position: relative;
-  top: 18%;
-  width: 40%;
+  top: 10%;
+  width: 45%;
   margin: 2% auto; }
   article .container {
     background: #04231E;
@@ -110,6 +112,11 @@ article {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10%; }
+    article .container .timer {
+      font-size: 2rem;
+      display: inline-block;
+      text-align: right;
+      border: 2px solid #B4CAD0; }
     article .container .quiz-container {
       border: 10px solid #531E1C;
       border-radius: 8px;
