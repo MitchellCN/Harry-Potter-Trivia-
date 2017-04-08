@@ -96,18 +96,17 @@ button:hover {
     color: #531E1C; }
 
 header {
-  background-color: rgba(83, 30, 28, 0.5);
+  background-color: rgba(83, 30, 28, 0.8);
   padding-top: 20px; }
 
 article {
-  height: 50vh;
   position: relative;
   top: 18%;
-  z-index: -10;
   width: 40%;
   margin: 2% auto; }
   article .container {
     background: #04231E;
+    opacity: .9;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10%; }
