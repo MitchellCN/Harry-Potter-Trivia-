@@ -1,9 +1,12 @@
 package com.harrypotter;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.net.ConnectException;
 import java.util.List;
 
 /**
@@ -13,13 +16,15 @@ import java.util.List;
 @Component
 public class QuestionRepository {
 
+
+
     @Autowired
-    JdbcTemplate template;
+    public JdbcTemplate jdbcTemplate;
 
     public List<Question> listQuestion() {
 
-        return template.query(
-                "SELECT * FROM question ORDER BY question_id",
+        return jdbcTemplate.query(
+                "SELECT * FROM trivia_game ORDER BY question_id",
                 (rs, i) -> new Question(
                         rs.getInt("question_id"),
                         rs.getString("question"),

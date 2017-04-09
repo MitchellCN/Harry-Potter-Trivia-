@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Harry Potter</title>
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/static/css/normalize.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css"/>
   </head>
   <body>
 
@@ -35,16 +36,18 @@
           <li><a href="#">Tour a Muggle Home</a></li>
         </ul>
       </div>
+
     </header>
 
     <article>
       <div class="container">
         <div class="quiz-container">
-          <h3 id="question">What did Harry see the first time he looked in the mirror of Erised?</h3>
+          <h3 id="question" >Whats did Harry see the first time he looked in the mirror of Erised?</h3>
           <button id="answer1">A. His family</button>
           <button id="answer2">B. Winning the Quidditch cup</button>
           <button id="answer3">C. Becoming an Auror</button>
           <button id="answer4">D. Beating Hermione Granger on the Charm final</button>
+        </div>
       </div>
     </article>
 
