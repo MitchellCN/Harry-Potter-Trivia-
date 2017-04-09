@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.show-toggle').slideToggle();
   });
 });
+<<<<<<< HEAD
 
 
 
@@ -19,3 +20,5 @@ $(document).ready(function(){
 //     }
 //   }, 1000);
 // });
+=======
+>>>>>>> origin/cmv1.0

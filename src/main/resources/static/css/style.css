@@ -115,7 +115,7 @@ article {
     border-radius: 8px;
     margin-bottom: 10%; }
     article .container .timer {
-      font-size: 2rem;
+      font-size: 1.75rem;
       width: auto;
       text-align: right;
       padding: 0 25px;
@@ -146,6 +146,8 @@ article {
 @media (max-width: 768px) {
   article {
     width: 75%; }
+    article .container .timer {
+      font-size: 1.5rem; }
 
   h2, h3, button {
     margin-bottom: 10px; }

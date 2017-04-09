@@ -1,6 +1,9 @@
 @media (max-width: 768px){
   article {
     width: 75%;
+    .container .timer {
+      font-size:1.5rem;
+    }
   }
   h2, h3, button {
     margin-bottom: 10px;
