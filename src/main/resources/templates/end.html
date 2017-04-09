@@ -1,21 +1,13 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-
-=======
 <html xmlns:th="http://www.thymeleaf.org">
->>>>>>> origin/cmv1.0
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/static/css/normalize.css}"/>
-    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
-    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css"/>
-=======
-
-
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}>
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
     <!--Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicon/apple-icon-57x57.png" th:href="@{/images/favicon/apple-icon-57x57.png}"/>
     <link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicon/apple-icon-60x60.png" th:href="@{/images/favicon/apple-icon-60x60.png}"/>
@@ -30,15 +22,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon/favicon-32x32.png" th:href="@{/images/favicon/favicon-32x32.png}"/>
     <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon/favicon-96x96.png" th:href="@{/images/favicon/favicon-96x96.png}"/>
     <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon/favicon-16x16.png" th:href="@{/images/favicon/favicon-16x16.png}"/>
-    <link rel="manifest" href="/manifest.json"/>
-    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}"/>
-    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
-    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/styles.css}"/>
-    <meta name="msapplication-TileColor" content="#ffffff"/>
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
-    <meta name="theme-color" content="#ffffff"/>
+    <link rel="manifest" href="/manifest.json" th:href="@{/manifest.json}"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
->>>>>>> origin/cmv1.0
   </head>
   <body>
 
@@ -47,17 +35,10 @@
       <div class="nav-desktop">
         <ul>
           <li><a href="#">Avade the Ministry</a></li>
-<<<<<<< HEAD
-          <li><a href="#">Mind Reading Class</a></li>
-          <li><a href="#">Potion Crash Course</a></li>
-          <li><a href="#">Ghost Chasing</a></li>
-          <li><a href="#">Trivia Persit</a></li>
-=======
           <li><a href="#">Ghost Chasing</a></li>
           <li><a href="#">Mind Reading Class</a></li>
           <li><a href="#">Muggle Trivia</a></li>
-          <li><a href="#">How to Talk to a Squib</a></li>
->>>>>>> origin/cmv1.0
+          <li><a href="#">Potion Crash Course</a></li>
           <li><a href="#">Send An Enemy to Azakaban</a></li>
           <li><a href="#">Tour a Muggle Home</a></li>
         </ul>
@@ -68,45 +49,21 @@
           <li><a href="#">Avade the Ministry</a></li>
           <li><a href="#">Ghost Chasing</a></li>
           <li><a href="#">Mind Reading Class</a></li>
-<<<<<<< HEAD
-          <li><a href="#">Muggle Trivial Pursuit</a></li>
-=======
           <li><a href="#">Muggle Trivia</a></li>
->>>>>>> origin/cmv1.0
-          <li><a href="#">Potion Crash Course</a></li>
+          <li><a href="#">How to Talk to a Squib</a></li>
           <li><a href="#">Send An Enemy to Azakaban</a></li>
           <li><a href="#">Tour a Muggle Home</a></li>
         </ul>
       </div>
-<<<<<<< HEAD
-
     </header>
 
     <article>
       <div class="container">
         <div class="quiz-container">
-          <h3 id="question" >Whats did Harry see the first time he looked in the mirror of Erised?</h3>
-          <button id="answer1">A. His family</button>
-          <button id="answer2">B. Winning the Quidditch cup</button>
-          <button id="answer3">C. Becoming an Auror</button>
-          <button id="answer4">D. Beating Hermione Granger on the Charm final</button>
+          <h2>You're Still A Muggle</h2>
+          <!-- <h3>Once you start you can't turn back!</h3> -->
+          <button><a href="index.html">Try Again</a></button>
         </div>
-=======
-    </header>
-
-    <article class="style-question">
-      <div class="container">
-        <div class="timer">12</div>
-        <div class="quiz-container" th:each="question : ${questions}">
-          <form>
-          <h3 id="question" th:text="${question.question}">What did Harry see the first time he looked in the mirror of Erised?</h3>
-          <button id="answer1">A.<p th:text="${question.answer}"> His family</p></button>
-          <button id="answer2">B.<p th:text="${question.answer1}"> Winning the Quidditch cup</p></button>
-          <button id="answer3">C.<p th:text="${question.answer2}"> Becoming an Auror</p></button>
-          <button id="answer4">D.<p th:text="${question.answer3}"> Beating Hermione Granger on the Charm final</p></button>
-          </form>
-      </div>
->>>>>>> origin/cmv1.0
       </div>
     </article>
 
