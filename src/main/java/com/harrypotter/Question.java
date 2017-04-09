@@ -48,11 +48,11 @@ public class Question {
         this.question = question;
     }
 
-    public Answer getAnswers() {
-        return answers;
+    public String getAnswer() {
+        return answer;
     }
 
-    public void setAnswer(Answer answer) {
+    public void setAnswer(String answer) {
         this.answers = answers;
     }
 

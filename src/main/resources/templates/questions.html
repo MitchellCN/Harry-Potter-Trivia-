@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Harry Potter</title>
+
+
+    <!--Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicon/apple-icon-57x57.png" th:href="@{/images/favicon/apple-icon-57x57.png}"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicon/apple-icon-60x60.png" th:href="@{/images/favicon/apple-icon-60x60.png}"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicon/apple-icon-72x72.png" th:href="@{/images/favicon/apple-icon-72x72.png}"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/images/favicon/apple-icon-76x76.png" th:href="@{/images/favicon/apple-icon-76x76.png}"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/images/favicon/apple-icon-114x114.png" th:href="@{/images/favicon/apple-icon-114x114.png}"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/images/favicon/apple-icon-120x120.png" th:href="@{/images/favicon/apple-icon-120x120.png}"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/images/favicon/apple-icon-144x144.png" th:href="@{/images/favicon/apple-icon-144x144.png}"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/images/favicon/apple-icon-152x152.png" th:href="@{/images/favicon/apple-icon-152x152.png}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicon/apple-icon-180x180.png" th:href="@{/images/favicon/apple-icon-180x180.png}"/>
+    <link rel="icon" type="image/png" sizes="192x192"  href="../static/images/favicon/android-icon-192x192.png" th:href="@{/images/favicon/android-icon-192x192.png}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon/favicon-32x32.png" th:href="@{/images/favicon/favicon-32x32.png}"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon/favicon-96x96.png" th:href="@{/images/favicon/favicon-96x96.png}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon/favicon-16x16.png" th:href="@{/images/favicon/favicon-16x16.png}"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/styles.css}"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Harry Potter</h1>
+      <div class="nav-desktop">
+        <ul>
+          <li><a href="#">Avade the Ministry</a></li>
+          <li><a href="#">Ghost Chasing</a></li>
+          <li><a href="#">Mind Reading Class</a></li>
+          <li><a href="#">Muggle Trivia</a></li>
+          <li><a href="#">How to Talk to a Squib</a></li>
+          <li><a href="#">Send An Enemy to Azakaban</a></li>
+          <li><a href="#">Tour a Muggle Home</a></li>
+        </ul>
+      </div>
+      <div class="nav-mobile">
+        <div class="toggle">Popular Links for Wizards</div>
+        <ul class="show-toggle">
+          <li><a href="#">Avade the Ministry</a></li>
+          <li><a href="#">Ghost Chasing</a></li>
+          <li><a href="#">Mind Reading Class</a></li>
+          <li><a href="#">Muggle Trivia</a></li>
+          <li><a href="#">Potion Crash Course</a></li>
+          <li><a href="#">Send An Enemy to Azakaban</a></li>
+          <li><a href="#">Tour a Muggle Home</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <article class="style-question">
+      <div class="container">
+        <div class="timer">12</div>
+        <div class="quiz-container" th:each="question : ${questions}">
+          <form>
+          <h3 id="question" th:text="${question.question}">What did Harry see the first time he looked in the mirror of Erised?</h3>
+          <button id="answer1">A.<p th:text="${question.answer}"> His family</p></button>
+          <button id="answer2">B.<p th:text="${question.answer1}"> Winning the Quidditch cup</p></button>
+          <button id="answer3">C.<p th:text="${question.answer2}"> Becoming an Auror</p></button>
+          <button id="answer4">D.<p th:text="${question.answer3}"> Beating Hermione Granger on the Charm final</p></button>
+          </form>
+      </div>
+      </div>
+    </article>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>

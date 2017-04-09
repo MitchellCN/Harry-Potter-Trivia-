@@ -21,12 +21,10 @@ public class HarryPotterController {
     @RequestMapping("/")
     public String index(Model model){
         List<Question> q  = repository.listQuestion();
-        List<String> answers = q.get(0).getAnswers().randomOrder();
-        System.out.println(q.get(0).getQuestion());
-        System.out.println(answers.get(0));
+
         model.addAttribute("questions",q);
-        model.addAttribute("answers",answers);
-        return "index";
+
+        return "questions";
     }
 
     @RequestMapping("/question")
