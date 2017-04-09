@@ -90,7 +90,8 @@ button {
   padding: 15px;
   border: none;
   border-radius: 8px;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   button a {
     padding: 10px 25px; }
 
