@@ -19,18 +19,30 @@ public class HarryPotterController {
     QuestionRepository repository;
 
     @RequestMapping("/")
-    public String index(Model model){
-        List<Question> q  = repository.listQuestion();
-
-        model.addAttribute("questions",q);
-
-        return "questions";
+    public String index(){
+        return "index";
     }
 
     @RequestMapping("/question")
-    public String question(Integer question_id){
-        System.out.println(question_id);
+    public String question(Model model) {
+//        System.out.println(question_id);
+        List<Question> q  = repository.listQuestion();
 
-        return "redirect:/";
+        model.addAttribute("questions",q);
+        return "questions";
+    }
+
+    @RequestMapping("/question/{id}")
+    public String question(Model model, Integer id) {
+        System.out.println(id);
+        List<Question> q  = repository.listQuestion();
+
+        model.addAttribute("questions",q);
+        return "redirect: /question";
+    }
+
+    @RequestMapping("/end")
+    public String end(){
+        return "end";
     }
 }

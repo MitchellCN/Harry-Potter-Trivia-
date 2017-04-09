@@ -14,7 +14,7 @@ $(document).ready(function(){
         $('.timer').html('hurry ' + timer + ' seconds');
       }
       else {
-        window.location = "end.html";
+        window.location = "end";
       }
     }, 1000);
   }

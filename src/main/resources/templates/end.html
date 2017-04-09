@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Harry Potter</title>
     <!-- <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}> -->
-    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" th:href="@{/css/normalize.css}" href="../static/css/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css"/>
 
     <!--Favicon  -->
-
     <link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicon/apple-icon-57x57.png" th:href="@{/images/favicon/apple-icon-57x57.png}"/>
     <link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicon/apple-icon-60x60.png" th:href="@{/images/favicon/apple-icon-60x60.png}"/>
     <link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicon/apple-icon-72x72.png" th:href="@{/images/favicon/apple-icon-72x72.png}"/>
@@ -24,10 +23,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon/favicon-32x32.png" th:href="@{/images/favicon/favicon-32x32.png}"/>
     <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon/favicon-96x96.png" th:href="@{/images/favicon/favicon-96x96.png}"/>
     <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon/favicon-16x16.png" th:href="@{/images/favicon/favicon-16x16.png}"/>
-    <link rel="manifest" href="/manifest.json" th:href="@{/manifest.json}"/>
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/styles.css}"/>-->
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+
 
   </head>
   <body>
@@ -64,13 +67,13 @@
         <div class="quiz-container">
           <h2>You're Still A Muggle</h2>
           <!-- <h3>Once you start you can't turn back!</h3> -->
-          <button><a href="index.html">Try Again</a></button>
+          <button><a th:href="@{'index'}" href="index.html">Try Again</a></button>
         </div>
       </div>
     </article>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../static/js/script.js"></script>
+    <script th:src="@{/js/script.js}" src="../static/js/script.js"></script>
   </body>
 </html>
