@@ -93,8 +93,7 @@ button {
   cursor: pointer;
   outline: none; }
   button .link-page {
-    padding: 10px 50px;
-    border: 1px solid white; }
+    padding: 10px 50px; }
 
 button:hover {
   background: #B4CAD0; }
