@@ -60,18 +60,24 @@
       </div>
     </header>
 
-    <article>
+    <article class="style-question">
       <div class="container">
-        <div class="quiz-container">
-          <h2>Test Your Knowledge</h2>
-          <h3>Once you start you can't turn back!</h3>
-          <button><a th:href="@{'/question'}" href="questions.html" class="link-page">Accio Quiz</a></button>
-        </div>
+        <div class="timer">10 seconds</div>
+        <div class="quiz-container" th:each="question : ${questions}">
+          <form>
+          <h3 id="question" th:text="${question.question}">What did Harry see the first time he looked in the mirror of Erised?</h3>
+          <button id="answer1"><a th:href="@{'/question/1'}"></a><p th:text="${question.answer}"> His family</p></button>
+          <button id="answer2"><a th:href="@{'/question/2'}"></a><p th:text="${question.answer1}"> Winning the Quidditch cup</p></button>
+          <button id="answer3"><a th:href="@{'/question/3'}"></a><p th:text="${question.answer2}"> Becoming an Auror</p></button>
+          <button id="answer4"><a th:href="@{'/question/4'}"></a><p th:text="${question.answer3}"> Beating Hermione Granger on the Charm final</p></button>
+          </form>
+      </div>
       </div>
     </article>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script th:src="@{/js/script.js}" src="../static/js/script.js"/>
+    <script th:src="@{/js/script.js}" src="../static/js/script.js"></script>
+    <script th:src="@{/js/question.js}" src="../static/js/question.js"></script>
   </body>
 </html>

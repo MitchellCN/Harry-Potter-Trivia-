@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Harry Potter</title>
+    <!-- <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}> -->
     <link rel="stylesheet" th:href="@{/css/normalize.css}" href="../static/css/normalize.css"/>
     <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"/>
     <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css"/>
@@ -29,6 +30,7 @@
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
+
 
   </head>
   <body>
@@ -63,15 +65,15 @@
     <article>
       <div class="container">
         <div class="quiz-container">
-          <h2>Test Your Knowledge</h2>
-          <h3>Once you start you can't turn back!</h3>
-          <button><a th:href="@{'/question'}" href="questions.html" class="link-page">Accio Quiz</a></button>
+          <h2>You're Still A Muggle</h2>
+          <!-- <h3>Once you start you can't turn back!</h3> -->
+          <button><a th:href="@{'index'}" href="index.html" class="link-page">Try Again</a></button>
         </div>
       </div>
     </article>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script th:src="@{/js/script.js}" src="../static/js/script.js"/>
+    <script th:src="@{/js/script.js}" src="../static/js/script.js"></script>
   </body>
 </html>

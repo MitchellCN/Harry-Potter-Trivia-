@@ -1,0 +1,16 @@
+
+.style-question {
+
+  button {
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+    color: $accent;
+  }
+  button:hover {
+    background: $accent;
+    p {
+    color: $secondary;
+    }
+  }
+}
